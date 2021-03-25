@@ -1,20 +1,17 @@
 (function($) {
     $(function() {
         var jcarousel = $('.jcarousel');
-
         jcarousel
             .on('jcarousel:reload jcarousel:create', function () {
                 var carousel = $(this),
                     width = carousel.innerWidth();
-
                 if (width >= 900) {
                     width = width / 4;
                 } else if (width >= 600) {
                     width = width / 2;
                 } else if (width >= 350) {
-                        width = width / 1;
+                    width = width / 1;
                 }
-
                 carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
             })
             .jcarousel({

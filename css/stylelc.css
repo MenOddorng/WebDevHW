@@ -1,4 +1,9 @@
-
+h2{
+    text-align: center;
+}
+div {
+    box-sizing: border-box;
+}
 /* header */
 .header {
     background-color: rgb(238, 103, 103);
