@@ -6,6 +6,7 @@
         <title>Responsive Homework</title>
         <link rel="stylesheet" type="text/css" href="css/stylelc.css">
         <link rel="stylesheet" type="text/css" href="css/general.css">
+        <link rel="stylesheet" href="css/colorbox.css" />
                 <!-- Shared assets -->
                 <link rel="stylesheet" type="text/css" href="css/style.css">
                 <!-- Example assets -->
@@ -13,6 +14,10 @@
                 <script type="text/javascript" src="js/jquery.js"></script>
                 <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
                 <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+                <script src="js/jquery.min.js"></script>
+                <script src="js/jquery.colorbox.js"></script>
+
+
     </head>
         
     <div class="container header">
@@ -64,6 +69,12 @@
                 </div>
             </div>  
         </div>    
+        <script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".gallery").colorbox({rel:'gallery', transition:"fade"});
+            });
+        </script>
         <div class="gallery">
             <a target="_blank" href="img/2.jpg">
                 <img src="img/2.jpg" alt="Forest" width="600" height="400">
@@ -101,7 +112,7 @@
             <div class="desc">Add a description of the image here</div>
         </div>
         <div class="gallery">
-            <a target="_blank" href="img/2.jpg">
+            <a target="_blank" href="img/2.jpg" class="gal">
                 <img src="img/2.jpg" alt="Forest" width="600" height="400">
             </a>
             <div class="desc">Add a description of the image here</div>
