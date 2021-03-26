@@ -40,13 +40,21 @@ div {
     content: "";
     display: table;
 }
+.container::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.clearfix {
+    clear: both;
+    content: "";
+    display: table;
+}
 .container {
     width: 1140px;
     margin: auto;
-    padding: 10px ;
 }
-
-
+/* Footer */
 .footer  {
     background-color: rgb(87, 221, 245);
     text-align: center;
